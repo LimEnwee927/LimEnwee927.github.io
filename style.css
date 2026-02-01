@@ -10,17 +10,17 @@ body {
   /* ===== CONTAINER ===== */
   .container {
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
     padding: 40px 20px;
   }
   
   /* ===== INTRO HEADER ===== */
   .intro {
     display: flex;
-    flex-wrap: wrap;          /* Makes it responsive on smaller screens */
+    flex-wrap: wrap;           /* Makes layout responsive on smaller screens */
     align-items: center;
     margin-top: 40px;
-    gap: 40px;                /* Space between photo and bio */
+    gap: 40px;                 /* Space between photo and bio */
   }
   
   /* ===== PHOTO ===== */
@@ -29,24 +29,27 @@ body {
   }
   
   .photo img {
-    width: 250px;             /* Bigger picture */
+    width: 250px;              /* Bigger picture */
     height: 250px;
-    border-radius: 50%;       /* Makes it round */
-    object-fit: cover;        /* Ensures image scales nicely */
+    border-radius: 50%;        /* Round */
+    object-fit: cover;         /* Ensure image scales correctly */
     border: 4px solid #1a73e8;
     margin-bottom: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);  /* Subtle shadow */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow */
   }
   
   /* ===== LINKS UNDER PHOTO ===== */
   .links {
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;                 /* Space between links */
   }
   
   .links a {
     text-decoration: none;
     color: #1a73e8;
-    margin: 0 8px;            /* Space between links */
     font-weight: bold;
     transition: color 0.3s;
   }
@@ -61,25 +64,43 @@ body {
     flex: 1;
   }
   
+  /* Name styling */
   .bio h1 {
-    font-size: 3rem;           /* Bigger name */
-    letter-spacing: 2px;       /* Spacing between letters */
+    font-size: 3rem;           /* Big name */
+    letter-spacing: 2px;       /* Space between letters */
     margin-bottom: 15px;
     font-weight: 700;
   }
   
+  /* Chinese name styling */
   .bio .chinese {
     display: block;
-    font-size: 2rem;           /* Slightly smaller for Chinese */
+    font-size: 2rem;
     font-style: italic;
     letter-spacing: 1px;
     margin-top: 5px;
   }
   
+  /* Paragraph styling */
   .bio p {
     font-size: 1.2rem;
     max-width: 600px;
-    line-height: 1.8;
-    margin: 0;
+    line-height: 1.8;          /* Comfortable line spacing */
+    margin-bottom: 20px;       /* Space between paragraphs */
+  }
+  
+  /* Email section */
+  .bio .email {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .bio .email a {
+    color: #1a73e8;
+    text-decoration: none;
+  }
+  
+  .bio .email a:hover {
+    text-decoration: underline;
   }
   
