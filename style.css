@@ -104,3 +104,50 @@ body {
     text-decoration: underline;
   }
   
+  /* ===== PROJECTS ===== */
+
+.project {
+    display: flex;
+    gap: 30px;
+    margin-top: 45px;
+    align-items: flex-start;
+  }
+  
+  .project img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    flex-shrink: 0;
+  }
+  
+  .project-content {
+    max-width: 650px;
+  }
+  
+  .project-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.3rem;
+  }
+  
+  .project-content p {
+    margin: 6px 0;
+    line-height: 1.6;
+  }
+  
+  .project-links {
+    margin-top: 10px;
+  }
+  
+  .project-links a {
+    margin-right: 14px;
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .project-links a:hover {
+    text-decoration: underline;
+  }
+  
